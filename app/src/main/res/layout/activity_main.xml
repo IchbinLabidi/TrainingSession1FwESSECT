@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginTop="200dp"
+    tools:context="com.example.elyes.helloworld.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/line1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Votre Nom : "
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="#ec0505"
+            android:fontFamily="sans-serif"
+        />
+   <EditText
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:hint="votre Nom"
+       android:id="@+id/editTxtNom"
+       android:layout_weight="0.5"
+       android:gravity="center"
+       />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/line2"
+        android:layout_below="@+id/line1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Votre Prenom : "
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="#ec0505"
+            android:fontFamily="sans-serif"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="votre Prenom"
+            android:id="@+id/editTxtPrenom"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="login"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/line2"
+android:layout_centerInParent="true"
+        />
+</RelativeLayout>

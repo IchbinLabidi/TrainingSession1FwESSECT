@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">"HelloWorld "</string>
+    <string name="email">"email "</string>
+    <string name="username">"username "</string>
+    <string name="password">"password"</string>
+    <string name="btnlogin">"LoginNow"</string>
+</resources>
